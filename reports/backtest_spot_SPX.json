@@ -1,0 +1,46 @@
+{
+  "strategy": "trend_follow_spot",
+  "asset": "SPX",
+  "params": {
+    "mom_lookbacks_months": [
+      6,
+      12
+    ],
+    "regime_sma_months": 10,
+    "vol_target_annual": 0.18,
+    "vol_span_months": 2,
+    "max_leverage": 3.0,
+    "use_regime_filter": false,
+    "allow_short": false,
+    "use_cpi_filter": true,
+    "cpi_yoy_threshold": 0.04,
+    "cpi_damp": 0.0
+  },
+  "metrics": {
+    "full": {
+      "final_equity": 180684.48,
+      "total_return": 0.8068,
+      "cagr": 0.0296,
+      "sharpe": 0.358,
+      "max_drawdown": 0.1936,
+      "n_trades": 256,
+      "turnover": 154.8,
+      "avg_exposure": 0.587,
+      "buy_hold_return": 0.9753
+    },
+    "is": {
+      "total_return": 0.8068,
+      "cagr": 0.0296,
+      "sharpe": 0.359,
+      "max_drawdown": 0.1936,
+      "_end": 3573
+    },
+    "oos": {
+      "total_return": 0.1133,
+      "cagr": 0.0178,
+      "sharpe": 0.221,
+      "max_drawdown": 0.1936
+    }
+  },
+  "generated_at": "2026-08-22T02:32:36.576558+00:00"
+}

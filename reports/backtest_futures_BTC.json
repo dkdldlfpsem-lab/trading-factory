@@ -1,0 +1,46 @@
+{
+  "strategy": "trend_follow_futures",
+  "asset": "BTC",
+  "params": {
+    "mom_lookbacks_months": [
+      6,
+      12
+    ],
+    "regime_sma_months": 10,
+    "vol_target_annual": 0.18,
+    "vol_span_months": 2,
+    "max_leverage": 3.0,
+    "use_regime_filter": false,
+    "allow_short": false,
+    "use_cpi_filter": true,
+    "cpi_yoy_threshold": 0.04,
+    "cpi_damp": 0.0
+  },
+  "metrics": {
+    "full": {
+      "final_equity": 1808911.39,
+      "total_return": 17.0891,
+      "cagr": 0.2003,
+      "sharpe": 1.385,
+      "max_drawdown": 0.1998,
+      "n_trades": 1773,
+      "turnover": 391.1,
+      "avg_exposure": 0.153,
+      "buy_hold_return": 892588.3128
+    },
+    "is": {
+      "total_return": 17.0891,
+      "cagr": 0.2003,
+      "sharpe": 1.385,
+      "max_drawdown": 0.1998,
+      "_end": 4052
+    },
+    "oos": {
+      "total_return": 0.549,
+      "cagr": 0.0963,
+      "sharpe": 0.772,
+      "max_drawdown": 0.1199
+    }
+  },
+  "generated_at": "2026-08-22T02:32:36.575569+00:00"
+}

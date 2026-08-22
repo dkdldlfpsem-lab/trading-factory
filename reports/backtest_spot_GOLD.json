@@ -1,0 +1,46 @@
+{
+  "strategy": "trend_follow_spot",
+  "asset": "GOLD",
+  "params": {
+    "mom_lookbacks_months": [
+      6,
+      12
+    ],
+    "regime_sma_months": 10,
+    "vol_target_annual": 0.18,
+    "vol_span_months": 2,
+    "max_leverage": 3.0,
+    "use_regime_filter": false,
+    "allow_short": false,
+    "use_cpi_filter": true,
+    "cpi_yoy_threshold": 0.04,
+    "cpi_damp": 0.0
+  },
+  "metrics": {
+    "full": {
+      "final_equity": 3023331.08,
+      "total_return": 29.2333,
+      "cagr": 0.0178,
+      "sharpe": 0.32,
+      "max_drawdown": 0.2553,
+      "n_trades": 294,
+      "turnover": 1037.1,
+      "avg_exposure": 0.261,
+      "buy_hold_return": 214.1611
+    },
+    "is": {
+      "total_return": 29.2333,
+      "cagr": 0.0178,
+      "sharpe": 0.32,
+      "max_drawdown": 0.2553,
+      "_end": 1626
+    },
+    "oos": {
+      "total_return": 19.9486,
+      "cagr": 0.0538,
+      "sharpe": 0.621,
+      "max_drawdown": 0.2553
+    }
+  },
+  "generated_at": "2026-08-22T02:32:36.576760+00:00"
+}

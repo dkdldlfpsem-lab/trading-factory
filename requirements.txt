@@ -4,3 +4,5 @@ pydantic>=2
 pytest>=8
 httpx>=0.26
 python-dotenv>=1.0
+sqlalchemy
+pandas

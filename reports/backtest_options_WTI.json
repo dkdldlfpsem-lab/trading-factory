@@ -1,0 +1,47 @@
+{
+  "strategy": "options_wheel_regime",
+  "asset": "WTI",
+  "strategy_params": {
+    "mom_lookbacks_months": [
+      6,
+      12
+    ],
+    "regime_sma_months": 10,
+    "vol_target_annual": 0.18,
+    "vol_span_months": 2,
+    "max_leverage": 3.0,
+    "use_regime_filter": false,
+    "allow_short": false,
+    "use_cpi_filter": true,
+    "cpi_yoy_threshold": 0.04,
+    "cpi_damp": 0.0
+  },
+  "options_params": {
+    "otm_put": 0.05,
+    "otm_call": 0.05,
+    "expiry_days": 30,
+    "iv_markup": 1.1,
+    "spread_frac": 0.05,
+    "notional_frac": 1.0
+  },
+  "metrics": {
+    "full": {
+      "final_equity": 656917.47,
+      "total_return": 5.5692,
+      "cagr": 0.0475,
+      "sharpe": 0.523,
+      "max_drawdown": 0.3169,
+      "n_trades": 358,
+      "turnover": 0.0,
+      "avg_exposure": 0.0,
+      "buy_hold_return": 2.3834
+    },
+    "oos": {
+      "total_return": 0.6013,
+      "cagr": 0.0394,
+      "sharpe": 0.514,
+      "max_drawdown": 0.198
+    }
+  },
+  "generated_at": "2026-08-22T02:32:36.577338+00:00"
+}
